@@ -1,0 +1,44 @@
+.list-noti {
+    list-style: none;
+
+    .noti-item {
+        padding: 10px 14px;
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .noti-text {
+            margin-left: 5px;
+            flex: 1;
+            .noti-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                span {
+                    flex: 1;
+                    margin-right: 20px;
+                    text-align: left;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+
+                    -webkit-line-clamp: 3;
+                }
+                .noti-dot {
+                    width: 15px;
+                    height: 15px;
+                    background-color: blueviolet;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: #e8d7d7;
+        }
+    }
+    img {
+        width: 40px;
+    }
+}
