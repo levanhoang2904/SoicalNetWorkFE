@@ -4,7 +4,6 @@ import { config } from "../../state/Constants";
 import { memo, useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useStore } from "../../store/hooks";
-import Comment from "../comment/comment";
 function Post(props) {
     const token = localStorage.getItem('accessToken')
     config.headers['Authorization'] = `Bearer ${token}`
